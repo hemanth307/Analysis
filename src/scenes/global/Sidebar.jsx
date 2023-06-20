@@ -50,6 +50,7 @@ const Sidebar = () => {
                     color: "#6870fa !important",
                 }
             }}
+            
         >
             <ProSidebar collapsed={isCollapsed}>
                 <Menu iconShape="square">
