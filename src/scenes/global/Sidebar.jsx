@@ -16,7 +16,7 @@ const Item = ({title, to, icon, selected, setSelected}) => {
     const colors = tokens(theme.palette.mode);
 
     return (
-        <MenuItem active={selected === title} style={{color : colors.grey[500]}} onClick={() => setSelected(title)} icon={icon}>
+        <MenuItem active={selected === !title} style={{color : colors.grey[500]}} onClick={() => setSelected(title)} icon={icon}>
             <Typography>{title}</Typography>
             <Link to={to} />
         </MenuItem>
